@@ -1,0 +1,318 @@
+body {
+    background: #f2f2f2;
+    font-family: 'Times New Roman', Times, serif;
+ /*   line-height: 1.5;*/
+    color: #323232;
+}
+
+a {
+    /*color: #323232;*/
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 100px;
+    padding: 24px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 48px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-name{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30pt;
+}
+
+.my-academic{
+    width:410px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.my-contact{
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* start of the skill section */
+.section-title{
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.open-buttons{
+    margin-top: -15px;
+}
+
+.course{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.course.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.course-des-header{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.header-title{
+    font-weight: bold;
+}
+
+.close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+}
+
+.course-des-body{
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.language{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.language.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.language-des-header{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.language-des-body{
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.project{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.project.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.projects-des-header{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.projects-des-body{
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+/* end of the skill section */
+/* start of the job experience section */
+.exp-title{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #258cb3;
+}
+
+.time-range{
+    line-height: 1;
+}
+
+.dotted-line{
+    line-height: 100px;
+    border-top-style: dotted;
+    border-top-width: 3px;
+    border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.exp1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 600px;
+    max-width: 80%;
+}
+
+.exp1.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.exp1-header{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.exp2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 600px;
+    max-width: 80%;
+}
+
+.exp2.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.exp2-header{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.exp3{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 600px;
+    max-width: 80%;
+}
+
+.exp3.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.exp3-header{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+/* end of job exp */
+.edu-title{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #258cb3;
+}
+
+.university{
+    font-weight:bold;
+}
+
+.col-one{
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.col-two{
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 1.5;
+}
